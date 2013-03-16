@@ -21,7 +21,7 @@ user {
 file {
 	'/etc/sudoers.d/vagrant':
 		ensure  => present,
-		content => "%admin ALL=NOPASSWD: ALL\nDefaults env_keep += \"SSH_AUTH_SOCK\"\n",
+		content => "%admin ALL=(ALL:ALL) NOPASSWD: ALL\nDefaults env_keep += \"SSH_AUTH_SOCK\"\n",
 		owner   => 'root',
 		group   => 'root',
 		mode    => 0600,
