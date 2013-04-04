@@ -24,7 +24,7 @@ file {
 		content => "%admin ALL=(ALL:ALL) NOPASSWD: ALL\nDefaults env_keep += \"SSH_AUTH_SOCK\"\n",
 		owner   => 'root',
 		group   => 'root',
-		mode    => 0600,
+		mode    => 0440,
 		require => Package['sudo'];
 }
 
