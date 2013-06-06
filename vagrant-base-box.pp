@@ -1,5 +1,5 @@
 package {
-	['sudo', 'tmux', 'git', 'puppet', 'chef', 'apt-transport-https']:
+	['sudo', 'tmux', 'git', 'puppet', 'ruby-hiera-puppet', 'chef', 'apt-transport-https']:
 		ensure => present;
 	'nano':
 		ensure => absent;
