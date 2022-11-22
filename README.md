@@ -7,10 +7,10 @@ Usage
 -----
 
 - Setup a virtual machine with a Debian-based Linux distribution (follow the description in [Base
-  Boxes](http://docs-v1.vagrantup.com/v1/docs/base_boxes.html) for this, until you reach the "Setup
-  Permissions" section).
+  Boxes](https://developer.hashicorp.com/vagrant/docs/boxes/base) for this,
+  until you reach the "Default User Settings" section).
 - Install Puppet.
 - Copy the `vagrant-base-box.pp` file to the virtual machine and run `puppet apply
   vagrant-base-box.pp`. This sets up `sudo`, `ssh` (including the [insecure SSH
-  key](http://github.com/mitchellh/vagrant/tree/master/keys/)) and installs some packages (including
-  `chef`, `git` and `tmux`).
+  key](https://github.com/hashicorp/vagrant/tree/main/keys)) and installs some packages (including
+  `git` and `tmux`).

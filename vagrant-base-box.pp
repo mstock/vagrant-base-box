@@ -1,5 +1,5 @@
 package {
-	['sudo', 'tmux', 'git', 'puppet', 'chef', 'apt-transport-https']:
+	['sudo', 'tmux', 'git', 'puppet', 'apt-transport-https']:
 		ensure => present;
 	'nano':
 		ensure => absent;
@@ -51,11 +51,4 @@ augeas {
 		changes => [
 			"set UseDNS no",
 		],
-}
-
-service {
-	'chef-client':
-		ensure  => stopped,
-		enable  => false,
-		require => Package['chef'];
 }
