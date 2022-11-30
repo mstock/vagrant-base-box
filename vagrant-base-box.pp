@@ -1,5 +1,5 @@
 package {
-	['sudo', 'tmux', 'git', 'puppet', 'apt-transport-https']:
+	['sudo', 'tmux', 'git', 'puppet', 'apt-transport-https', 'rsync']:
 		ensure => present;
 	'nano':
 		ensure => absent;
