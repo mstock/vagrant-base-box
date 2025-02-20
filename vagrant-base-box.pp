@@ -4,14 +4,6 @@ package {
 	'nano':
 		ensure => absent;
 }
-case $lsbdistcodename {
-	/^(wheezy)$/: {
-		package {
-			['ruby-hiera-puppet']:
-				ensure => present;
-		}
-	}
-}
 
 group {
 	'admin':
